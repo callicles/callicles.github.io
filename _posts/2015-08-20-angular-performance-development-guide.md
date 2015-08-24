@@ -15,7 +15,7 @@ Please provide any feedback you feel necessary in the comments below, I will try
 ------
 
 ## Folder structure
-```
+~~~
 - + .scss          Stylesheets to be compiled with compass
 - + extension +    Extension folder, this is the folder that
               |    represents the extension. If you want to install
@@ -42,7 +42,7 @@ Please provide any feedback you feel necessary in the comments below, I will try
              |
              + models         Panel app models
              + panels         js behind each panel.
-```
+~~~
 
 ## The Build process & dependencies
 
