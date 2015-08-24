@@ -61,7 +61,16 @@ We use browserify as a way to structure the browser code in the extension. Thank
 
 ![Schema of the build process](https://docs.google.com/drawings/d/1cpGahfztH7ZcJb4fnzc4Jy6VxkGMJG4bJR3ygsamGv0/pub?w=1478&h=150)
 
-## The extension lifecycle (TODO)
+## The extension lifecycle
+First one important thing to understand about extensions is that they have a background script that is instantiated once and serve as a the vertebral column of the extension. Each tab connects to the same background.js instance.
+
+The same also applies to devtools instances. Devtools instances can be seen as tab that connect to the background script. As a result, for each tab you have a unique tuple of (tab, background, devtool) and you have to keep track of them to be able to communicate between the tab and the devtools.
+
+On all tabs the extension injects the content-script located in the `injected` folder. This content-script initiate connection with the background page. It only injects the inspector in the tab if the devtools are opened.
+
+Once injected, the inspector determines if angular is used in the webpage. If it is not, it does not do anything. Else, it instruments the application and starts sending measurements to the content-script, then to the background page, and finally to the devtools.
+
+![LifeCycle of the extension](https://docs.google.com/drawings/d/1ZrT5lxe7K34IPcJxXZs0d4brqftGJXYk5RWBm9qpR9w/pub?w=1361&h=1078)
 
 ## The registry (TODO)
 
