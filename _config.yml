@@ -2,7 +2,7 @@ name: MindScraper
 description: Blogging about stuffs
 meta_description: "Nicolas joseph's blog"
 
-markdown: redcarpet
+markdown: kramdown
 highlighter: pygments
 logo: false
 paginate: 15
