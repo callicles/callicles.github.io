@@ -77,13 +77,21 @@ The devtools page is only used to instantiate a panel in which the UI of the ext
 The setting up of the content-script, the background page and the devtools page are done in the `manifest.json` file at the root of the extension folder. This file describes all the metadata of the chrome extension.
 
 ## The registry
+The registry is the object that stores all the data used in the extension. It stores time series and maps in buffers that are kept bounded.
 
+To be displayed on the screen, the data is requested from the registry. It should provide the data in a format convenient for usage with the different graph libraries.
 
-## UI (TODO)
+## UI
 
-### Tab Handler (TODO)
+### Tab Handler
 
-### Panels (TODO)
+The tab handler is the component that takes care of switching the view between the tabs in the panel. The `panel.html` holds all the panels html and the tab handler contains all the javascript to switch between tabs.
+
+This is pure JQuery.
+
+### Panels
+
+Panels are the UI of the extension. The html and structure of the panels is contained in the `panel.html` file. Each panel has its own controller and all the controllers are located in the `panels` folder.
 
 ## Resources
 
