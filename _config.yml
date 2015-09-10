@@ -10,6 +10,9 @@ baseurl: /
 domain_name: 'nicolasjoseph.com'
 google_analytics: 'UA-1842340-4'
 
+gems:
+  - jekyll-feed
+
 # Details for the RSS feed generator
 url:            'http://www.nicolasjoseph.com'
 author:         'Nicolas Joseph'
