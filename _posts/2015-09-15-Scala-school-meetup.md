@@ -13,7 +13,7 @@ What I mainly got out of this presentation is the existence of sealed traits whi
 
 From the presentation was given this example:
 
-~~~scala
+{% highlight scala %}
 sealed trait Answer
 
 case object Yes extends Answer
@@ -23,7 +23,7 @@ val x: Answer = Yes
 x match {
   case No => println("No")
 }
-~~~
+{% endhighlight %}
 
 Will give the compiler warning:
 
@@ -37,7 +37,7 @@ scala.MatchError: Yes (of class Yes$)
 
 Finally, we implemented some linked list methods. Here is the skeleton of the project.
 
-~~~scala
+{% highlight scala %}
 case object MNil extends MList
 case class MCons(head: Int, tail: MList) extends MList
 
@@ -64,4 +64,4 @@ myList.map(_ + 1) // res2: MList = MCons(2,MCons(3,MCons(4,MCons(5,MNil))))
 myList.filter(_ % 2 == 0) // res3: MList = MCons(1,MCons(3,MNil))
 myList.append(5) // MCons(1,MCons(2,MCons(3,MCons(4,MCons(5,MNil)))))
 myList.reverse // MCons(4,MCons(3,MCons(2,MCons(1,MNil))))
-~~~
+{% endhighlight %}
