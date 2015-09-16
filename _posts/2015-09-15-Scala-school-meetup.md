@@ -13,7 +13,7 @@ What I mainly got out of this presentation is the existence of sealed traits whi
 
 From the presentation was given this example:
 
-{% highlight scala %}
+{% highlight Scala %}
 sealed trait Answer
 
 case object Yes extends Answer
@@ -37,7 +37,7 @@ scala.MatchError: Yes (of class Yes$)
 
 Finally, we implemented some linked list methods. Here is the skeleton of the project.
 
-{% highlight scala %}
+{% highlight Scala %}
 case object MNil extends MList
 case class MCons(head: Int, tail: MList) extends MList
 
