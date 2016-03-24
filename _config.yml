@@ -3,7 +3,7 @@ description: Blogging about stuffs
 meta_description: "Nicolas joseph's blog"
 
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 logo: false
 paginate: 15
 baseurl: /
