@@ -25,4 +25,9 @@ The cooks will have to communicate and cooperate.
 
 After thinking hard about it, he is able to come up with a plan to make all the required pizzas, in the same time it would take to make one, with a carefully thought plan.
 
+For the competition, Giovani is going to make his speciality, a pizza with 8 ingredients.
+
+The plan as he imagined it is presented below:
+![parallele_prefix_scheme](http://nicolasjoseph.com/assets/images/pizza_parallel_prefix.png)
+
 
