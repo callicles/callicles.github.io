@@ -1,11 +1,12 @@
 ---
+layout: post
+title:  "Parallel Prefix explained with pizzas"
+date:   2016-03-17 11:10:00
+categories: "Computer-Science"
 published: true
 ---
 
-
-## Parallel Prefix explained with pizzas
-
-Parallel prefix is a concept of the parallel and distributed computing world but can be seen, like most computer science concepts, as a real world process. To explain it, let's go through an illustrated story. 
+Parallel prefix is a concept of the parallel and distributed computing world but can be seen, like most computer science concepts, as a real world process. To explain it, let's go through an illustrated story.
 
 ### The Pizza Story
 
@@ -17,7 +18,7 @@ Giovani is a rising Italian Chef. As a marketing move, he decides to participate
 
 And, of course, he has to make it as quickly as possible.
 
-Thinking back on the rules, Giovani realizes that nothing prevents him from getting some other cooks to make the pizzas in parallel. 
+Thinking back on the rules, Giovani realizes that nothing prevents him from getting some other cooks to make the pizzas in parallel.
 
 However, one more constraint gets added: one cook only has room for one ingredients at his table and can only mix it to one other thing during each step of the competition. Concretely, that means that if a cook has Dough on his table, then in one step he make dough with one thing on it (tomato, for example). He can't add mushrooms and tomato in the same step.
 
