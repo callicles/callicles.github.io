@@ -10,11 +10,11 @@ Parallel prefix is a concept of the parallel and distributed computing world but
 
 ### The Pizza Story
 
-Giovani is a rising Italian Chef. As a marketing move, he decides to participate in a pizza competition. The competition is a bit special: you have to make the best pizza of them all, and you also have to make pizzas that respresent all the steps of the cooking process. In other words, for a simple Margharita made with dough, tomato and mozarella cheese, he has to make 3 pizzas:
+Giovani is a rising Italian Chef. As a marketing move, he decides to participate in a pizza competition. The competition is a bit special: you have to make the best pizza of them all, and you also have to make pizzas that represent all the steps of the cooking process. In other words, for a simple Margarita made with dough, tomato and mozzarella cheese, he has to make 3 pizzas:
 
 * **Pizza 1:** Dough
 * **Pizza 2:** Dough + tomato
-* **Magharita:** Dough + tomato + mozarella
+* **Margarita:** Dough + tomato + mozzarella
 
 And, of course, he has to make it as quickly as possible.
 
