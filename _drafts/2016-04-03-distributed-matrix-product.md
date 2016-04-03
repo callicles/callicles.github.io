@@ -1,7 +1,7 @@
 ---
 published: false
 layout: post
-title: Distributed Matrix multiplication
+title: Distributed Matrix product
 date: 2016-04-03T11:10:00.000Z
 categories: "Computer-Science"
 ---
