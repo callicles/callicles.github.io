@@ -82,9 +82,30 @@ This really gives us the intuition that if we repeat that operation enough we wi
 
 ### Submatrices data segmentation
 
+An intuition that you can get from the previous method is that instead of slicing one matrix verticaly and the other horizontaly by the number of processors, could we slice it in p submatrices
 
+// Images of the new slicing 
 
+In that configuration, each one of the c(x,x) can be expressed as the sum of the dot product of a subset of A & B submatrices.
 
+// Equation for Sum
+
+That equation expresses the fact that, like before, we still need the entire row and column to compute the complete dot product but the way to get there is different. Now, each processor is responsible for computing only one subpart of the resulting matrix C. 
+
+Now what's needed to get the result of that computation ?
+
+Let's take processor 1 as an example, with a total of 4 processors. Then, in order to compute its submatrix of C, C(1,1), it needs A(1,1), B(1,1), A(1,2) and B(1,2):
+
+* C(1,1) = A(1,1)B(1,1) + A(1,2)B(2,1)
+* C(1,2) = A(1,1)B(1,2) + A(1,2)B(2,2)
+* C(2,1) = A(2,1)B(1,1) + A(2,2)B(2,1)
+* C(2,2) = A(2,1)B(1,2) + A(2,2)B(2,2)
+
+In order to have all those pieces we are going to play the same game as in the previous algorithm. We are going to swap around the pieces of A and B so that every processor gets what it needs without having all the data at once.
+
+This time let's imagine the processors in a 2x2 grid. On each iteration, each processor is going to give its part of B to the processor one way down and its part of A one way right. In the following drawing, A parts follow the the green arrows and B parts the red arrows.
+
+// Insert drawing here about how to flip things around
 
 
 
