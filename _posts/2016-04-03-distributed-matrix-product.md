@@ -21,7 +21,7 @@ With numbers instead of crosses and circles.
 
 When a matrix has the same number of rows and column we say that it is squared ... because it looks like a square.
 
-<img src="http://callicles.github.io/assets/images/distributed-matrix/squarematrix.png" alt="Square matrix" style="max-width: 400px; margin: 0 auto;" />
+<img src="http://callicles.github.io/assets/images/distributed-matrix/squarematrix.png" alt="Square matrix" style="max-width: 200px; margin: 0 auto;" />
 
 ### Dot Product
 A dot product an operation that takes two matrices and return another matrix as the result. Let's take an example to go through the process.
@@ -32,7 +32,7 @@ Let A be a squared 2x2 (2 rows & 2 columns) matrix and B another squared 2x2 mat
 
 This matrix product will result in another 2x2 matrix C
 
-<img src="http://callicles.github.io/assets/images/distributed-matrix/c.png" alt="C" style="max-width: 300px; margin: 0 auto;" />
+<img src="http://callicles.github.io/assets/images/distributed-matrix/c.png" alt="C" style="max-width: 200px; margin: 0 auto;" />
 
 In that configuration each element of C: c(1,1), c(1,2), c(2,1) and c(2,2) is the result of sums and products on the corresponding rows of A and columns of B with the following fashion:
 
@@ -67,11 +67,11 @@ Let's attribute each slice of the data for each matrix to a processor. What happ
 
 It gets the first rows slice of A and the first column slice of B. With that, and using the definition of the dot product, it is only able to compute a specific part of C, the top left corner of C.
 
-<img src="http://callicles.github.io/assets/images/distributed-matrix/c_res.png" alt="C res" style="max-width: 300px; margin: 0 auto;" />
+<img src="http://callicles.github.io/assets/images/distributed-matrix/c_res.png" alt="C res" style="max-width: 200px; margin: 0 auto;" />
 
 Following that logic, each processor will be able to compute a part of the diagonal on C. Resulting in a partial result of the dot product for C. The only elements that we will be able to compute will the the blacked squared elements on the following drawing.
 
-<img src="http://callicles.github.io/assets/images/distributed-matrix/c_diag.png" alt="C diag" style="max-width: 300px; margin: 0 auto;" />
+<img src="http://callicles.github.io/assets/images/distributed-matrix/c_diag.png" alt="C diag" style="max-width: 200px; margin: 0 auto;" />
 
 In order to fill the blanks we will iterate but we will change how the slice of B are affected to processors. Now processor one will have rows' slice 1 of A and columns slice 2 of B and will be able to compute the corresponding part of C, which is the intersection of slice 1 and 2. If we imagine the processors in a ring all they have to do at each iteration is pass their current slice of B to their neighbor until everybody has seen all the slices of B.
 
@@ -79,7 +79,7 @@ In order to fill the blanks we will iterate but we will change how the slice of 
 
 The result will of the next iteration will be the parts of C drawn in red.
 
-<img src="http://callicles.github.io/assets/images/distributed-matrix/c_diag_2.png" alt="C diag 2" style="max-width: 300px; margin: 0 auto;" />
+<img src="http://callicles.github.io/assets/images/distributed-matrix/c_diag_2.png" alt="C diag 2" style="max-width: 200px; margin: 0 auto;" />
 
 This really gives us the intuition that if we repeat that operation enough we will be able to compute the whole matrix after having computed small parts of it.
 
