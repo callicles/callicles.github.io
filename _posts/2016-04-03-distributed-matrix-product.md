@@ -13,9 +13,9 @@ Matrix multiplication is something a mathemacial operation that takes two matric
 ## Matrices and dot product
 
 ### Matrices
-A matrix is a data structure that's made of columns and rows. It is basically a Tic tac toe grid with a potentially infinite number of rows and columns and numbers within the grid. 
+A matrix is a data structure that's made of columns and rows. It is basically a Tic tac toe grid with a potentially infinite number of rows and columns and numbers within the grid.
 
-![Tictactoe](http://callicles.github.io/assets/images/distributed-matrix/tictactoe.png)
+![Tictactoe](http://callicles.github.io/assets/images/distributed-matrix/tictactoe.png =250x)
 
 With numbers instead of crosses and circles.
 
@@ -26,7 +26,7 @@ When a matrix has the same number of rows and column we say that it is squared .
 ![squarematrix](http://callicles.github.io/assets/images/distributed-matrix/squarematrix.png)
 
 ### Dot Product
-A dot product an operation that takes two matrices and return another matrix as the result. Let's take an example to go through the process. 
+A dot product an operation that takes two matrices and return another matrix as the result. Let's take an example to go through the process.
 
 Let A be a squared 2x2 (2 rows & 2 columns) matrix and B another squared 2x2 matrix.
 
@@ -95,7 +95,7 @@ In that configuration, each one of the c(x,x) can be expressed as the sum of the
 
 ![equation_sub](http://callicles.github.io/assets/images/distributed-matrix/equation_sub.png)
 
-That equation expresses the fact that, like before, we still need the entire row and column to compute the complete dot product but the way to get there is different. Now, each processor is responsible for computing only one subpart of the resulting matrix C. 
+That equation expresses the fact that, like before, we still need the entire row and column to compute the complete dot product but the way to get there is different. Now, each processor is responsible for computing only one subpart of the resulting matrix C.
 
 Now what's needed to get the result of that computation ?
 
