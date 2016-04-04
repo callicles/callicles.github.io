@@ -6,9 +6,7 @@ date: 2016-04-03T08:26:00.000Z
 categories: "Computer-Science"
 ---
 
-
-
-Matrix multiplication is something a mathemacial operation that takes two matrices and produces another one as a result. Before explaining how distributed matrices product can work, we are going to do a quick reminder of whati is a matrix and what's a dot product of matrices. You can skip that part if everything is fresh in your mind.
+Matrix multiplication is something a mathematical operation that takes two matrices and produces another one as a result. Before explaining how distributed matrices product can work, we are going to do a quick reminder of what is a matrix and what's a dot product of matrices. You can skip that part if everything is fresh in your mind.
 
 ## Matrices and dot product
 
@@ -49,9 +47,9 @@ The overall operation look like this, in red is circled the elements of the matr
 
 ## Distributed matrix product
 
-Why trying to distribute this operation accross processors?
+Why trying to distribute this operation across processors?
 
-This operation is used in a lot of Machine Learning algorithms. The more data you have in machine learning, the better the output of your algorithm is likely to be. So we want to be able to make that operation on very large matrices that potentialy don't fit into memory.
+This operation is used in a lot of Machine Learning algorithms. The more data you have in machine learning, the better the output of your algorithm is likely to be. So we want to be able to make that operation on very large matrices that potentially don't fit into memory.
 
 For the sake of simplicity we will consider squared matrices but everything can be generalized to all kind of matrices.
 
@@ -71,11 +69,11 @@ It gets the first rows slice of A and the first column slice of B. With that, an
 
 ![c_res1](http://callicles.github.io/assets/images/distributed-matrix/c_res.png)
 
-Follwing that logic, each processor will be able to compute a part of the diagonal on C. Resulting in a partial result of the dot product for C. The only elements that we will be able to compute will the the blacked squared elements on the following drawing.
+Following that logic, each processor will be able to compute a part of the diagonal on C. Resulting in a partial result of the dot product for C. The only elements that we will be able to compute will the the blacked squared elements on the following drawing.
 
 ![c_diag](http://callicles.github.io/assets/images/distributed-matrix/c_diag.png)
 
-In order to fill the blanks we will iterate but we will change how the slice of B are affected to processors. Now processor one will have rows' slice 1 of A and columns slice 2 of B and will be able to compute the corresponding part of C, which is the intersection of slice 1 and 2. If we imagine the processors in a ring all they have to do at each iteration is pass their current slice of B to their neighboor untill everybody has seen all the slices of B.
+In order to fill the blanks we will iterate but we will change how the slice of B are affected to processors. Now processor one will have rows' slice 1 of A and columns slice 2 of B and will be able to compute the corresponding part of C, which is the intersection of slice 1 and 2. If we imagine the processors in a ring all they have to do at each iteration is pass their current slice of B to their neighbor until everybody has seen all the slices of B.
 
 ![column_ring](http://callicles.github.io/assets/images/distributed-matrix/column_ring.png)
 
@@ -87,13 +85,14 @@ This really gives us the intuition that if we repeat that operation enough we wi
 
 ### Submatrices data segmentation
 
-An intuition that you can get from the previous method is that instead of slicing one matrix verticaly and the other horizontaly by the number of processors, could we slice it in p submatrices
+An intuition that you can get from the previous method is that instead of slicing one matrix vertically and the other horizontally by the number of processors, could we slice it in p submatrices
 
 ![sub_matrix_prod](http://callicles.github.io/assets/images/distributed-matrix/sub_matrix_prod.png)
 
 In that configuration, each one of the c(x,x) can be expressed as the sum of the dot product of a subset of A & B submatrices.
 
 ![equation_sub](http://callicles.github.io/assets/images/distributed-matrix/equation_sub.png)
+$$ C_{1,1} = \sum_{i=1}{\sqrt{p} A_{1,i}B_{i,1}} $$
 
 That equation expresses the fact that, like before, we still need the entire row and column to compute the complete dot product but the way to get there is different. Now, each processor is responsible for computing only one subpart of the resulting matrix C.
 
