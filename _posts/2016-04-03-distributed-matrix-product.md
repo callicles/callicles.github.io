@@ -35,10 +35,10 @@ This matrix product will result in another 2x2 matrix C
 
 In that configuration each element of C: c(1,1), c(1,2), c(2,1) and c(2,2) is the result of sums and products on the corresponding rows of A and columns of B with the following fashion:
 
-* c(1,1) = 1 * 2 + 3 * 3 = 11
-* c(1,2) = 1 * 1 + 3 * 1 = 4
-* c(2,1) = 5 * 2 + 2 * 3 = 16
-* c(2,2) = 5 * 1 + 2 * 1 = 7
+* c(1,1) = A(1,1) * B(1,1) + A(1,2) * B(2,1) = 1 * 2 + 3 * 3 = 11
+* c(1,2) = A(1,1) * B(1,2) + A(1,2) * B(2,2) = 1 * 1 + 3 * 1 = 4
+* c(2,1) = A(2,1) * B(1,1) + A(2,2) * B(2,1) = 5 * 2 + 2 * 3 = 16
+* c(2,2) = A(2,1) * B(1,2) + A(2,2) * B(2,2) = 5 * 1 + 2 * 1 = 7
 
 The overall operation look like this, in red is circled the elements of the matrix involved in getting the c(1,1) = 11 part of the resulting matrix C:
 
