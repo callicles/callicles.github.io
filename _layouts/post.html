@@ -63,12 +63,12 @@ post_class: post-template
             <!-- If we want to display author's name and bio -->
             {% if site.author %}
                 <figure class="author-image">
-                    <a class="img" href="{{ site.baseurl }}" style="background-image: url({{site.profile_pic}})">
+                    <a class="img" href="{{ site.baseurl }}/about.html" style="background-image: url({{site.profile_pic}})">
                     <span class="hidden">{{site.author}}'s Picture</span></a>
                 </figure>
                 <section class="author">
                     <!-- Author Name -->
-                    <h4> {{ site.author }} </h4>
+                    <h4><a href="{{ site.baseurl }}/about.html"> {{ site.author }}</a> </h4>
                     <!-- Author Bio -->
                     <p>
                         Currently enrolled at <a href="http://tech.cornell.edu/">Cornell Tech</a> as
