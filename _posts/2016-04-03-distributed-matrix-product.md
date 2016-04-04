@@ -13,7 +13,7 @@ Matrix multiplication is something a mathematical operation that takes two matri
 ### Matrices
 A matrix is a data structure that's made of columns and rows. It is basically a Tic tac toe grid with a potentially infinite number of rows and columns and numbers within the grid.
 
-![Tictactoe](http://callicles.github.io/assets/images/distributed-matrix/tictactoe.png =250x)
+<img src="http://callicles.github.io/assets/images/distributed-matrix/tictactoe.png" alt="Tictactoe" style="max-width: 100px" />
 
 With numbers instead of crosses and circles.
 
