@@ -1141,6 +1141,16 @@ body:not(.post-template) .post-title {
     box-shadow: #E7EEF2 0 0 0 1px;
 }
 
+.about-author-image .img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 100%;
+}
+
 .author-image .img {
     position: relative;
     display: block;
