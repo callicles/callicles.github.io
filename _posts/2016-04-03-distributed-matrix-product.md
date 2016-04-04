@@ -2,29 +2,28 @@
 published: true
 layout: post
 title: Distributed Matrix product
-date: 2016-04-03T08:26:00.000Z
+date: {}
 categories: "Computer-Science"
 ---
 
-Matrix multiplication is something a mathematical operation that takes two matrices and produces another one as a result. Before explaining how distributed matrices product can work, we are going to do a quick reminder of what is a matrix and what's a dot product of matrices. You can skip that part if everything is fresh in your mind.
+
+Matrix multiplication is a mathematical operation that takes two matrices and produces another one as a result. Before explaining how distributed matrices product can work, we are going to do a quick reminder of what is a matrix and what's a dot product of matrices. You can skip that part if everything is fresh in your mind.
 
 ## Matrices and dot product
 
 ### Matrices
-A matrix is a data structure that's made of columns and rows. It is basically a Tic tac toe grid with a potentially infinite number of rows and columns and numbers within the grid.
+A matrix is a data structure that's made of columns and rows. It is basically a Tic tac toe grid filled with numbers and a potentially infinite number of rows and columns.
 
 <img src="http://callicles.github.io/assets/images/distributed-matrix/tictactoe.png" alt="Tictactoe" style="max-width: 300px; margin: 0 auto;" />
 
-With numbers instead of crosses and circles.
-
 <img src="http://callicles.github.io/assets/images/distributed-matrix/tittacttoenumber.png" alt="Tictactoe Number" style="max-width: 500px; margin: 0 auto;" />
 
-When a matrix has the same number of rows and column we say that it is squared ... because it looks like a square.
+When a matrix has the same number of rows and columns we say that it is squared ... because it looks like a square.
 
 <img src="http://callicles.github.io/assets/images/distributed-matrix/squarematrix.png" alt="Square matrix" style="max-width: 200px; margin: 0 auto;" />
 
 ### Dot Product
-A dot product an operation that takes two matrices and return another matrix as the result. Let's take an example to go through the process.
+A dot product is an operation that takes two matrices and returns another matrix as the result. Let's take an example to go through the process.
 
 Let A be a squared 2x2 (2 rows & 2 columns) matrix and B another squared 2x2 matrix.
 
