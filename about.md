@@ -3,7 +3,7 @@ layout: page
 title: "Hi !"
 ---
 
-My name is Nicolas Joseph, I am a software engineer and a life long learner. The content on the web made me, it's time to give back. 
+My name is Nicolas, I am a software engineer currently living in New York.
 
 Here are some projects I am working on or that I have worked on.
 
@@ -20,20 +20,20 @@ This is a Chrome extension aimed at monitoring angular application performance.
 Because of how Angular 1.x is structured, some key elements needs to be monitored during development
 to assess an application performance. This extension provides real time monitoring charts of the
 number of watchers, digest timing and digest rate. You also get the digest timing distribution so
-that you can make out exceptionally long digest timing from more recursive patterns and all 
-real time data are linked to events so that you can determine which actions changed the application 
-performances. Finally, you can time services method and count their execution to determine the ones 
+that you can make out exceptionally long digest timing from more recursive patterns and all
+real time data are linked to events so that you can determine which actions changed the application
+performances. Finally, you can time services method and count their execution to determine the ones
 that have the more impact on the running time of your app.
 
 ## Inactive
 
 ### [Firestorm](https://github.com/callicles/firestorm-prototype)
 
-Web application programing has been more and more swaped to the browser. The rise of frameworks such 
-as angular, ember, etc … is a very good reminder of that. However the security of this new layer of 
+Web application programing has been more and more swaped to the browser. The rise of frameworks such
+as angular, ember, etc … is a very good reminder of that. However the security of this new layer of
 abstraction has not been well studied yet.
 
-Firestorm is a JavaScript fuzzing framework for client side applications. It is built as a [Firebug](http://getfirebug.com/) 
-extension. It first analyses scripts of a web page to get its function declaration structure. 
-The user can select a function to fuzz, the generation module to use to create data for each 
+Firestorm is a JavaScript fuzzing framework for client side applications. It is built as a [Firebug](http://getfirebug.com/)
+extension. It first analyses scripts of a web page to get its function declaration structure.
+The user can select a function to fuzz, the generation module to use to create data for each
 argument, and the detection module to detect any anomalies.

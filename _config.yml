@@ -9,6 +9,7 @@ paginate: 15
 baseurl: /
 domain_name: 'nicolasjoseph.com'
 google_analytics: 'UA-1842340-4'
+disqus: true
 
 gems:
   - jekyll-feed
