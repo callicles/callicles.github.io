@@ -2,7 +2,7 @@
 published: true
 layout: post
 title: Distributed Matrix product
-date: {}
+date: 2016-04-03T08:26:00.000Z
 categories: "Computer-Science"
 ---
 
@@ -46,7 +46,7 @@ The overall operation look like this, in red is circled the elements of the matr
 
 ## Distributed matrix product
 
-Why trying to distribute this operation across processors?
+Why trying to distribute this operation across processors in a computer?
 
 This operation is used in a lot of Machine Learning algorithms. The more data you have in machine learning, the better the output of your algorithm is likely to be. So we want to be able to make that operation on very large matrices that potentially don't fit into memory.
 
