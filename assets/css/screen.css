@@ -22,7 +22,12 @@
 
 /* Custom thing for the about page */
 .social-profiles {
-    margin: auto;
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 0.5em;
+}
+.social-profiles i {
+    margin-left: 10px;
 }
 
 /* ==========================================================================
