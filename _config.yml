@@ -10,6 +10,7 @@ baseurl: /
 domain_name: 'nicolasjoseph.com'
 google_analytics: 'UA-1842340-4'
 disqus: true
+profile_pic: '/assets/images/profile.png'
 
 gems:
   - jekyll-feed

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: about
 title: "Hi !"
 ---
 
@@ -10,7 +10,7 @@ Here are some projects I am working on or that I have worked on.
 ## Active
 
 ### [GitRank](https://github.com/gitlinks/github-rank-project)
-This is a project to help developers chose between open source libraries hosted on GitHub. It does 
+This is a project to help developers chose between open source libraries hosted on GitHub. It does
 so by providing a platform on which they can be rated and evaluated by peers. These evaluations
 are merged and weighted against the authors own contributions and open-source project ratings'.
 
