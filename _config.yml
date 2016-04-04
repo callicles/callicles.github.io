@@ -6,7 +6,7 @@ markdown: kramdown
 highlighter: rouge
 logo: false
 paginate: 15
-baseurl: /
+baseurl: http://nicolasjoseph.com/
 domain_name: 'nicolasjoseph.com'
 google_analytics: 'UA-1842340-4'
 disqus: true
