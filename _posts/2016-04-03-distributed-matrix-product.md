@@ -30,7 +30,7 @@ A dot product an operation that takes two matrices and return another matrix as 
 
 Let A be a squared 2x2 (2 rows & 2 columns) matrix and B another squared 2x2 matrix.
 
-![AB](http://callicles.github.io/assets/images/distributed-matrix/ab.png)
+![AB](http://callicles.github.io/assets/images/distributed-matrix/AB.png)
 
 This matrix product will result in another 2x2 matrix C
 
