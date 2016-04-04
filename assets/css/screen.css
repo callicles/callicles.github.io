@@ -1125,6 +1125,22 @@ body:not(.post-template) .post-title {
     box-shadow: #E7EEF2 0 0 0 1px;
 }
 
+.author-image {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    overflow: hidden;
+    padding: 6px;
+    background: #fff;
+    z-index: 2;
+    box-shadow: #E7EEF2 0 0 0 1px;
+}
+
 .author-image .img {
     position: relative;
     display: block;
