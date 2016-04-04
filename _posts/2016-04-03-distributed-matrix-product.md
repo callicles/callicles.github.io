@@ -72,7 +72,7 @@ Following that logic, each processor will be able to compute a part of the diago
 
 <img src="http://callicles.github.io/assets/images/distributed-matrix/c_diag.png" alt="C diag" style="max-width: 200px; margin: 0 auto;" />
 
-In order to fill the blanks we will iterate but we will change how the slice of B are affected to processors. Now processor one will have rows' slice 1 of A and columns slice 2 of B and will be able to compute the corresponding part of C, which is the intersection of slice 1 and 2. If we imagine the processors in a ring all they have to do at each iteration is pass their current slice of B to their neighbor until everybody has seen all the slices of B.
+In order to fill the blanks we need to do several iterations in which we will change how the slice of B are affected to processors. Now, processor 1 will have rows' slice 1 of A, columns slice 2 of B, and will be able to compute the corresponding part of C. The intersection of slice 1 and 2. If we imagine all the processors in a ring, all each processor has to do at each iteration is pass to the right their current slice of B to their neighbor until everybody has seen all the slices of B.
 
 <img src="http://callicles.github.io/assets/images/distributed-matrix/column_ring.png" alt="Column Ring" style="max-width: 500px; margin: 0 auto;" />
 
@@ -80,11 +80,11 @@ The result will of the next iteration will be the parts of C drawn in red.
 
 <img src="http://callicles.github.io/assets/images/distributed-matrix/c_diag_2.png" alt="C diag 2" style="max-width: 200px; margin: 0 auto;" />
 
-This really gives us the intuition that if we repeat that operation enough we will be able to compute the whole matrix after having computed small parts of it.
+This really gives us the intuition that if we repeat that operation enough we will be able to compute the whole matrix by collecting all the small part that we have computed.
 
 ### Submatrices data segmentation
 
-An intuition that you can get from the previous method is that instead of slicing one matrix vertically and the other horizontally by the number of processors, could we slice it in p submatrices
+An intuition that you can get from the previous method is that instead of slicing matrices vertically and horizontally by the number of processors, could we slice it in p little squares, p submatrices
 
 <img src="http://callicles.github.io/assets/images/distributed-matrix/sub_matrix_prod.png" alt="C diag 2" style="max-width: 500px; margin: 0 auto;" />
 
@@ -94,7 +94,7 @@ In that configuration, each one of the c(x,x) can be expressed as the sum of the
 
 $$ C_{1,1} = \sum_{i=1}{\sqrt{p} A_{1,i}B_{i,1}} $$
 
-That equation expresses the fact that, like before, we still need the entire row and column to compute the complete dot product but the way to get there is different. Now, each processor is responsible for computing only one subpart of the resulting matrix C.
+That equation expresses the fact that, like before, we still need the entire row and column to compute the complete dot product for a square but the way to get there is different. Now, each processor is responsible for computing only one subpart of the resulting matrix C and doesn't need whole rows or columns to do so.
 
 Now what's needed to get the result of that computation ?
 
