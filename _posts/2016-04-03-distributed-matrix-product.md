@@ -2,7 +2,7 @@
 published: true
 layout: post
 title: Distributed Matrix product
-date: {}
+date: 2016-04-03T08:26:00.000Z
 categories: "Computer-Science"
 ---
 
