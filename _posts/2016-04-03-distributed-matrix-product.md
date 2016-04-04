@@ -92,6 +92,7 @@ An intuition that you can get from the previous method is that instead of slicin
 In that configuration, each one of the c(x,x) can be expressed as the sum of the dot product of a subset of A & B submatrices.
 
 ![equation_sub](http://callicles.github.io/assets/images/distributed-matrix/equation_sub.png)
+
 $$ C_{1,1} = \sum_{i=1}{\sqrt{p} A_{1,i}B_{i,1}} $$
 
 That equation expresses the fact that, like before, we still need the entire row and column to compute the complete dot product but the way to get there is different. Now, each processor is responsible for computing only one subpart of the resulting matrix C.
