@@ -7,6 +7,7 @@ categories: "Computer-Science"
 ---
 
 
+
 Matrix multiplication is something a mathemacial operation that takes two matrices and produces another one as a result. Before explaining how distributed matrices product can work, we are going to do a quick reminder of whati is a matrix and what's a dot product of matrices. You can skip that part if everything is fresh in your mind.
 
 ## Matrices and dot product
@@ -14,7 +15,7 @@ Matrix multiplication is something a mathemacial operation that takes two matric
 ### Matrices
 A matrix is a data structure that's made of columns and rows. It is basically a Tic tac toe grid with a potentially infinite number of rows and columns and numbers within the grid. 
 
-![Tictactoe]({{site.baseurl}}/assets/images/distributed-matrix/tictactoe.png)
+![Tictactoe](http://callicles.github.io/assets/images/distributed-matrix/tictactoe.png)
 
 With numbers instead of crosses and circles.
 
