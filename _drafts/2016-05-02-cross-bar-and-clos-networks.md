@@ -27,7 +27,27 @@ This is when clos network comes to the rescue.
 
 ## Clos Networks
 
+Clos networks are networks whose topology are based on cross bar networks. Let's consider our switchboard operator from before as a crossbar network. They have calls coming in and have to connect the incoming call to the line the customer wants to reach. 
 
+>Image 4
+
+Now If a lot of calls come in, the operator will be completely overwhelmed and will not be able to patch through all the calls. The intuition here is that we are going to multiply the number of operators to answer the demand.
+
+> Image 5 from Image 4
+
+The result of the previous design is that now incoming lines and outgoing lines are linked with a particular operator. So that if you want to connect with someone who's line is on another operator's board, you can't.
+
+To fix that design flaw we will add one layer of operators.
+
+> Image with 2 layers of operators
+
+Now that we have two layers of operators everybody can contact everybody in the network. However, there is still one big downsize to the system. Two people linked to the same ingress operator can't talk at the same time with other people on the same egress operator. There is only one line available between an ingress operator and an egress operator !
+
+Fortunatly adding another layer of operators will also solve that problem.
+
+> Image with 3 layers of operators
+
+Now, each ingress is connected exactly once to all the middle operators. All the middle operators are connected to all the ingress and egress operators. And finaly all the egress operators are connected to all the middle operators. Now that way there are different paths to get from one ingress operator to an egress operator. Actually the number of paths is exactly the number of operators in the middle layer.
 
 
 
