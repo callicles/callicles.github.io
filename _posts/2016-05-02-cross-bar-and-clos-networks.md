@@ -1,5 +1,8 @@
 ---
 published: false
+layout: post
+date: 2016-05-02T17:36:00.000Z
+categories: "Computer-Science"
 ---
 Internet is a network of computers, a web of machines connected with one another in a seemingly chaosive pattern.
 
