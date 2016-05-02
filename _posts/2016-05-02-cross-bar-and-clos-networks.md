@@ -6,8 +6,7 @@ categories: "Computer-Science"
 ---
 Internet is a network of computers, a web of machines connected with one another in a seemingly chaosive pattern.
 
-![Network]({{site.baseurl}}/assets/images/clos/network.png)
-
+<img src="{{site.baseurl}}/assets/images/clos/network.png" alt="Network" style="max-width: 500px; margin: 0 auto;" />
 
 But when you zoom in and get into the nitty gritty details the network is actually structured in a very interesting way. Instead of being connected directly to one another like the previous drawing suggested, they are linked together through an intermediate piece of hardware either called a routeur or a switch. If you want to draw a paralell with the old days of the telephone, you can compare the switch to the operator you would get on the phone when you would ask him to connect you with someone else.
 
@@ -50,8 +49,7 @@ Now that we have two layers of operators everybody can contact everybody in the 
 
 Fortunatly adding another layer of operators will also solve that problem.
 
-![ClosNetwork]({{site.baseurl}}/assets/images/ClosNetwork.png)
-
+<img src="{{site.baseurl}}/assets/images/ClosNetwork.png" alt="ClosNetwork" style="max-width: 800px; margin: 0 auto;" />
 
 Now, each ingress is connected exactly once to all the middle operators. All the middle operators are connected to all the ingress and egress operators. And finaly all the egress operators are connected to all the middle operators. Now that way there are different paths to get from one ingress operator to an egress operator. Actually the number of paths is exactly the number of operators in the middle layer.
 
