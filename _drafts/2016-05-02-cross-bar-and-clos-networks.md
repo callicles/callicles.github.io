@@ -49,7 +49,13 @@ Fortunatly adding another layer of operators will also solve that problem.
 
 Now, each ingress is connected exactly once to all the middle operators. All the middle operators are connected to all the ingress and egress operators. And finaly all the egress operators are connected to all the middle operators. Now that way there are different paths to get from one ingress operator to an egress operator. Actually the number of paths is exactly the number of operators in the middle layer.
 
+That type of network has some interesting properties when you ply with the number of operators in the middle and the number of layers. Considering m the number of operators in the middle layer and n the number of lines to be connected together then if m ≥ 2n−1 the network will be strictly non blocking. Meaning that an incoming call can always be connected to an unsed line without having to rearange ongoing calls on the network. If the verified property is m ≥ n, then every incoming call will be able to be connected to a free line but we may have to rearange exsisting connections in the network to patch people through.
 
+Finaly another interesting consideration is that for big enough network, it is cheaper to build a clos network than a Cross bar network, even if the clos network is built from cross bar networks. 
+
+### Reference:
+
+* [https://en.wikipedia.org/wiki/Clos_network](Clos Network - Wikipedia)
 
 
 
