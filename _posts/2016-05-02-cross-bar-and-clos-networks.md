@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 date: 2016-05-02T17:36:00.000Z
 categories: "Computer-Science"
