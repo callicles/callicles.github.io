@@ -32,13 +32,13 @@ This is when clos network comes to the rescue.
 
 ## Clos Networks
 
-Clos networks are networks whose topology are based on cross bar networks. Let's consider our switchboard operator from before as a crossbar network. They have calls coming in and have to connect the incoming call to the line the customer wants to reach. 
+Clos networks are networks whose topology are based on cross bar networks. Let's consider our switchboard operator from before as a crossbar network. They have calls coming in and have to connect the incoming call to the line the customer wants to reach.
 
 ![OneOperator]({{site.baseurl}}/assets/images/OneOperator.png)
 
 Now If a lot of calls come in, the operator will be completely overwhelmed and will not be able to patch through all the calls. The intuition here is that we are going to multiply the number of operators to answer the demand.
 
-![Multiplying operators]({{site.baseurl}}/assets/images/TwoOperators.png)
+![Multiplying operators]({{site.baseurl}}/assets/images/TwoOperators2.png)
 
 The result of the previous design is that now incoming lines and outgoing lines are linked with a particular operator. So that if you want to connect with someone who's line is on another operator's board, you can't.
 
@@ -62,6 +62,3 @@ Finaly another interesting consideration is that for big enough network, it is c
 ### Reference:
 
 * [Clos Network - Wikipedia](https://en.wikipedia.org/wiki/Clos_network)
-
-
-
