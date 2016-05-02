@@ -47,7 +47,8 @@ Now that we have two layers of operators everybody can contact everybody in the 
 
 Fortunatly adding another layer of operators will also solve that problem.
 
-> Image with 3 layers of operators
+![ClosNetwork]({{site.baseurl}}/assets/images/ClosNetwork.png)
+
 
 Now, each ingress is connected exactly once to all the middle operators. All the middle operators are connected to all the ingress and egress operators. And finaly all the egress operators are connected to all the middle operators. Now that way there are different paths to get from one ingress operator to an egress operator. Actually the number of paths is exactly the number of operators in the middle layer.
 
