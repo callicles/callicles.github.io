@@ -1,10 +1,10 @@
 ---
 published: true
 layout: post
-date: 2016-05-02T17:36:00.000Z
+date: {}
 categories: "Computer-Science"
 ---
-Internet is a network of computers, a web of machines connected with one another in a seemingly chaosive pattern.
+Internet is a network of computers, a web of machines connected with one another in a random chaosive pattern.
 
 <img src="{{site.baseurl}}/assets/images/clos/network.png" alt="Network" style="max-width: 500px; margin: 0 auto;" />
 
