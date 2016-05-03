@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-date: {}
+date: 2016-05-03T09:51:00.000Z
 categories: "Computer-Science"
 ---
 The Internet is a network of computers: a web of machines connected with one another in a seemingly random pattern.
@@ -12,7 +12,7 @@ But when you dive into the nitty gritty details of how the network is actually s
 
 ![Operator and switch]({{site.baseurl}}/assets/images/operator.png)
 
-This is the piece of the puzzle we are going to look at: the switch. The switch is the wiring that connects everything together. 
+This is the piece of the puzzle we are going to look at: the switch. The switch is the wiring that connects everything together.
 
 
 ## Cross Bar Networks
